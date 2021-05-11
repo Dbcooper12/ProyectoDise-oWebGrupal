@@ -1,0 +1,32 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#titulo{
+    text-align: center;
+    padding: 15px;
+    border: 1px black solid;
+}
+
+.subtitulo{
+    padding: 15px;
+    margin-right: 500px;
+    border: 1px black solid;
+}
+
+.texto{
+    margin-right: 600px;
+}
+
+img{
+    float: right;
+    padding: 15px;
+    width: 250px;
+    margin-left: 15px;
+    border: 1px black solid;
+}
+
+#estrellas{
+    float: right;
+}
