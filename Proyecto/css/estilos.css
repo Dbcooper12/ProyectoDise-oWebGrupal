@@ -1,0 +1,42 @@
+ 
+#contenedor {
+    width: 420px;
+}
+
+#gbotones {
+    margin-bottom: 15px;
+}
+
+.input-group {
+    margin-bottom: 5px;
+}
+
+.badge-info {
+    background-color: #5bc0de;
+}
+header {
+    flex: 0 0 auto;
+    background-color:#E54E0B;
+}
+
+.head img {
+    margin: 15px 0px 15px 30px;
+    width: 100px;
+    height: 100px;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+header a {
+    color: white;
+    padding: 10px 20px;
+    background-color: rgb(0, 10, 3);
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 5px 15px;
+}
+ 

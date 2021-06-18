@@ -1,12 +1,257 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   
+    <!-- <link rel="stylesheet" href="../css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="css/all.min.css">
     
+    <title>....::: Pepper's Games :::....</title>
+</head>
+ 
+<header>
+    <div class="text-center">
+        <div class="head"  >  
+         <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+               <img src="../img/Alien-Kicks-03.png" height="30"  alt="">       
+              <div class="Informaciongeneral">
+                <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pepper's Games &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1> 
+          </div> 
+ 
+          <div class="text-center">
+            <button type="button" class="btn btn-outline-link btn-sm">Inicio Session</button> 
+            <img src="../img/primera imagen2.png" height="30"  alt="">   
+          </div>
+      </div>
+    </div> 
+          
+</header> 
+<body>
+   <!--    Navegador -->
+    <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+       
+    <ul class="nav nav-pills nav-fill">
+        <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Categorias &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </h4>
+        <li class="nav-item">
+          <a class="nav-link " href="../index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="catalago.html">Catálago</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="noticia.html">Noticias</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  " href="soporte.html">Soporte</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link  " href="nosotros.html">Nosotros</a>
+          </li>
+      </ul>
+    </nav>
+     <!-- Fin  Navegador -->
+     <!-- Buscardor -->
+    <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tienda de calatago de videojuegos</h2>
+    <form class="form-inline">
+        <input class="form-control mr-sm-2" type="search" placeholder="Buscar VideoJuegos" aria-label="Buscar producto">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+      </form>
+ <!-- Fin Buscardor -->
+ <div class="row">
+    <div class="cursos col">
+        <h3>Cursos</h3>
+        <div class="row lista-cursos">
+        </div>
+    </div>
+    <div class="carrito col">
+        <h3>Carrito de Compra</h3>
+        <table class="table table-hover table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th class="text-center">-</th>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+            <tbody id="tblDatos">
+            </tbody>
+            <tfoot>
+                <tr class="table-info font-weight-bold" id="total"></tr>
+            </tfoot>
+        </table>
+    </div>
+</div>
+<form class="form-group">
+    <h4>Información de cliente:</h4>
+    <div class="row">
+        <div class="col">
+            <label for="txtNombres">Nombres y Apellidos</label>
+            <input type="text" class="form-control" id="txtNombres">
+            <label for="txtEmail" class="mt-2">Email:</label>
+            <input type="email" class="form-control" id="txtEmail">
+        </div>
+        <div class="frm-botones col">
+            <button type="button" class="btn btn-primary" onclick="comprar()" data-toggle="modal" data-target="#confirmarCompra">Enviar compra</button>
+            <button type="reset" class="btn btn-secondary" onclick="limpiarCarrito()">Nueva compra</button>
+        </div>
+    </div>
+</form>
+</div>
+<div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" id="confirmarCompra">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-tittle">Confirmar compra</h5>
+            </div>
+            <div class="modal-body" id="contenido-modal">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Volver</button>
+                <button type="button" class="btn btn-primary" onclick="confirmarCompra()" data-toggle="modal" data-target="#confirmacion" data-dismiss="modal">Confirmar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" tabindex="-2" role="dialog" aria-hidden="true" id="confirmacion">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <h5 class="text-center">Compra exitosa</h5>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary mx-auto" data-dismiss="modal">Aceptar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+     <!-- Footer -->
+<footer class="text-center text-lg-start bg-light text-muted" >
+    <!-- Section: Social media -->
+    <section
+      class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"style="background-color: #e3f2fd;"
+    >
+      <!-- Left -->
+      
+      <!-- Left -->
+  
+      <!-- Right -->
+      <div style="background-color: #e3f2fd;">
+        <h6>Redes Sociales</h6>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+  
+    <!-- Section: Links  -->
+    <section class="" style="background-color: #e3f2fd;">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3"></i>Pepper's Games
+            </h6>
+            <p>
+              Compañia que vende videojuegos. 
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+       
+  
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Enlaces utiles
+            </h6>
+            <p>
+              <a href="../index.html" class="text-reset">Inicio</a>
+            </p>
+            <p>
+              <a href="catalago.html" class="text-reset">Catalogo</a>
+            </p>
+            <p>
+              <a href="noticia.html" class="text-reset">Noticias</a>
+            </p>
+            <p>
+              <a href="soporte.html" class="text-reset">Soporte</a>
+            </p> 
+            <p>
+                <a href="nosotros.html" class="text-reset">Nosotros</a>
+              </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Contactanos
+            </h6>
+            <p><i class="fas fa-home me-3"></i> chiclayo, PE</p>
+            <p>
+              <i class="fas fa-envelope me-3"></i>
+              info@Pepper'sGames.com
+            </p>
+            <p><i class="fas fa-phone me-3"></i> + 51 999 567 887</p>
+            <p><i class="fas fa-print me-3"></i> + 51 988 567 892</p>
+          </div>
+          <!-- Grid column -->
+             <!-- Grid column -->
+             <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  Mapa de ubicacion
+                </h6>
+                <img src="../img/mapa.png" height="180"  alt="">  
+              </div>
+              <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  
+    <!-- Copyright -->
+    
+    <div class="text-center p-4" style="background-color: #e3f2fd;">
+      © 2021 Copyright:
+      <a class="text-reset fw-bold" >Grupo 2 de trabajo</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+  <script src="../js/jquery-3.4.1.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/main.js"></script>
 </body>
+
 </html>
