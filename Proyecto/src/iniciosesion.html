@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <link rel="stylesheet" href="../css/bootstrap.min.css"> 
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/stylesLogin.css">
     <link rel="stylesheet" href="../css/all.min.css">
     
     <title>....::: Pepper's Games :::....</title>
@@ -54,7 +54,33 @@
     </nav>
      <!-- Fin  Navegador -->
      
+        
+     <!-- Iniciar Sesion -->
+     <div id="logreg-forms">
+      <form class="form-signin">
+          <h1 class="h3 mb-3 font-weight-normal" style="text-align: center"> Iniciar Sesión</h1>
+          <div class="social-login">
+              <button class="btn facebook-btn social-btn" type="button"><span><i class="fab fa-facebook-f"></i> Iniciar Sesión con Facebook</span> </button>
+              <button class="btn google-btn social-btn" type="button"><span><i class="fab fa-google-plus-g"></i> Iniciar Sesión con Google+</span> </button>
+          </div>
+          <p style="text-align:center"> O  </p>
+          <input type="email" id="inputEmail" class="form-control" placeholder="Correo Electronico" required="" autofocus="">
+          <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required="">
+          
+          <button class="btn btn-success btn-block" type="submit"><i class="fas fa-sign-in-alt"></i> Iniciar Sesión</button>
+          <a href="#" id="forgot_pswd">Olvidaste la contraseña?</a>
+          <hr>
+          <!-- <p>Don't have an account!</p>  -->
+          <button class="btn btn-primary btn-block" type="button" id="btn-signup"><i class="fas fa-user-plus"></i> Registrar Nueva Cuenta</button>
+          </form>
 
+          <form action="/reset/password/" class="form-reset">
+              <input type="email" id="resetEmail" class="form-control" placeholder="Email address" required="" autofocus="">
+              <button class="btn btn-primary btn-block" type="submit">Olvide mi contraseña?</button>
+              <a href="#" id="cancel_reset"><i class="fas fa-angle-left"></i> Atras</a>
+          </form>
+       </div>
+       <!-- Fin de inicio de sesion -->
 
 
 
