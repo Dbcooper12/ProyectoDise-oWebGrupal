@@ -102,6 +102,15 @@ header a {
     margin: auto; 
 }
 
+.subtitulo{
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 50%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .5s;
+}
+
 .content{
     display:block;
     margin-left: auto; 
@@ -116,21 +125,53 @@ header a {
 
 .texto{
     font-size: 16px;
-    padding: 8px;
+    padding: 6px;
 }
 
-.subtitulo{
-    text-decoration: none;
-    background-image: linear-gradient(currentColor, currentColor);
-    background-position: 0% 100%;
-    background-repeat: no-repeat;
-    background-size: 0% 2px;
-    transition: background-size .5s;
+@import url('https://fonts.googleapis.com/css?family=Raleway:200');
+
+#box {
+    align-items: center;
+    justify-content: center;
 }
 
-.subtitulo:hover, .subtitulo:focus {
-    background-size: 100% 2px;
+.texCol {
+    --borderWidth: 3px;
+    position: relative;
+    border-radius: var(--borderWidth);
+    border: 1px solid #333;
+    margin: 15px;
 }
+.texCol:after {
+    content: '';
+    position: absolute;
+    top: calc(-1 * var(--borderWidth));
+    left: calc(-1 * var(--borderWidth));
+    height: calc(100% + var(--borderWidth) * 2);
+    width: calc(100% + var(--borderWidth) * 2);
+    background: linear-gradient(60deg, #ffffff, #ffffff, #f5f0f2, #eee9f0, #f0f1f5, #f1f6f7, #ffffff, #ffffff);
+    border-radius: calc(2 * var(--borderWidth));
+    z-index: -1;
+    animation: animatedgradient 3s ease alternate infinite;
+    background-size: 300% 300%;
+}
+  
+  
+@keyframes animatedgradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
+
+
+
+
 
 /*login css*/
 #logreg-forms{
