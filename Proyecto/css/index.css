@@ -79,12 +79,33 @@ header {
     margin: 15px 0px 15px 30px;
     width: 100px;
     height: 100px;
+    
+}
+h1{
+    text-align: center;
+}
+.contenedor{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+h4{
+    text-align: center;
+}
+  
+title{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .head {
     display: flex;
     align-items: center;
     flex-direction: row;
+    text-align: center;
+
 }
 
 header a {
