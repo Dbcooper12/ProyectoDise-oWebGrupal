@@ -137,3 +137,10 @@ header a {
     font-size: 16px;
     padding: 8px;
 }
+.boton{
+    background: url('../img/primera imagen2.png');
+    background-size: 100% 100%;
+    border: none;
+    cursor: pointer;
+    padding: 30px 30px;
+}

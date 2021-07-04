@@ -48,7 +48,13 @@ nav ul{
     padding: 0px 0px 15px 0px;
     border-radius: 10px;
 }
-
+.boton{
+    background: url('../img/primera imagen2.png');
+    background-size: 100% 100%;
+    border: none;
+    cursor: pointer;
+    padding: 30px 30px;
+}
 .carrito h3 {
     color: white;
     padding: 10px 20px;

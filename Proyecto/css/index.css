@@ -122,3 +122,10 @@ header a {
     -ms-flex-wrap: wrap;
     flex-wrap: nowrap;
 }
+.boton{
+    background: url('../img/primera imagen2.png');
+    background-size: 100% 100%;
+    border: none;
+    cursor: pointer;
+    padding: 30px 30px;
+}
