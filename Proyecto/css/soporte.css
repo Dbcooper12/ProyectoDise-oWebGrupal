@@ -3,27 +3,29 @@
 img {
     height: 30px;
     width: 40px;
-    margin: 50px;
+    margin: 70px;
     padding: 0px;
     
 }
 
-h3 {
+h5{
     position: relative;
-    top: -100px;
-    left: 120px;
+    top: -95px;
+    left: 150px;
 }
 
 p {
     position: relative;
-    top: -150px;
+    top: -160px;
     left: 220px;
     text-align: justify;
 }
 
 .tamaño {
-    height: 60px;
-    width: 500px;
+    font-size: 18px;
+    font-family: Arial;
+    margin-left: 60px;
+    margin-top: 45px;
 }
 
 #bloque1{
@@ -34,16 +36,11 @@ p {
 
 #bloque2{
     width: 400px;
-    position: relative;
-    margin-left: 900px;
-    margin-top: -580px;
+    margin-left: 600px;
+    margin-top: -420px;
     border-right: medium;
     border-style: groove;
     border-color: tomato;
-}
-
-h2{
-    margin: 50px;
 }
 
 
