@@ -9,10 +9,7 @@
       
     <link rel="stylesheet" href="../css/stylesLogin.css">
     <link rel="stylesheet" href="../css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Tourney:ital,wght@1,700&display=swap" rel="stylesheet">
+    
     
     <title>....::: Pepper's Games :::....</title>
 </head>
@@ -21,13 +18,13 @@
   <div class="text-center">
     <div class="head" style="display: flex;justify-content: space-around;"  >  
           <img src="../img/ovni.gif" height="30"  alt="">       
-            <h1 style="font-family: 'Tourney', cursive;">  Pepper's Games </h1> 
+            <h1>  Pepper's Games </h1> 
       <a   class="boton" onclick="iniciosesion()"  ></a>      
        </div>
 </div> 
           
-</header> 
-<body>
+</header > 
+<body onload="actualizarDatos()" class="fondo4">
    <!--    Navegador -->
    <nav class="navbar navbar-light" style="background-color: #e3f2fd; display: flex; justify-content: center;">
        
@@ -52,36 +49,33 @@
     </nav>
      <!-- Fin  Navegador -->
       
-     
      <!-- Iniciar Sesion -->
-      <div id="logreg-forms">
+      <div id="logreg-forms" onload="actualizarDatos()">
           <form class="form-signin">
               <h1 class="h3 mb-3 font-weight-normal" style="text-align: center"> Registro</h1> 
-              <input type="text" id="inputName" class="form-control" placeholder="Nombre" required=""> <br>
-              <input type="text" id="inputLastName" class="form-control" placeholder="Apellidos" required=""> <br>
-              <input type="email" id="inputEmail" class="form-control" placeholder="Correo Electronico" required="" autofocus=""> <br>
-              <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required=""> <br>
-              <input type="password" id="inputPassword" class="form-control" placeholder="Confirmar Contraseña" required=""> <br>
+              <input type="text" id="nombre" class="form-control" placeholder="Nombre" required="" aria-describedby="basic-addon1"> <br>
+              <input type="text" id="apellido" class="form-control" placeholder="Apellidos" required="" aria-describedby="basic-addon1"> <br>
+              <input type="email" id="correo" class="form-control" placeholder="Correo Electronico" required="" autofocus="" aria-describedby="basic-addon1"> <br>
+              <input type="password" id="contraseña" class="form-control" placeholder="Contraseña" required=""> <br>
+              <input type="password" id="confiaContraseña" class="form-control" placeholder="Confirmar Contraseña" required=""> <br>
              
               <div class="checkbox"  style="display: flex;">
                 <input type="checkbox" > <p style="display: flex;">Acepto los<a href="#" style="padding: 1px;">Ternimos y Condiciones</a > </p>
               </div>
             
-              <button class="btn btn-success btn-block" type="submit"><i class="fas fa-sign-in-alt"></i> Registrar  </button> <br>
+              <button class="btn btn-success btn-block" type="submit" onclick="guardarDato()"
+              ><i class="fas fa-sign-in-alt"></i> Registrar 
+             </button> <br>
 
               <div>
                 <p style="display: flex; text-align: center;"> Ya tienes cuenta? <a href="../src/iniciosesion.html" style="padding: 1px;">Iniciar Sesion</a> </p>
               </div>
 
-             
               <hr> 
             
           </form>
        </div> 
        <!-- Fin de inicio de sesion -->
-
-
-
 
      <!-- Footer -->
 <footer class="text-center text-lg-start bg-light text-muted" >
@@ -201,6 +195,7 @@
     <!-- Copyright -->
   </footer>
   <!-- Footer -->
+  <script src="../js/registrarUsuario.js"></script>
   <script src="../js/jquery-3.4.1.min.js"></script>
   <script src="../js/bootstrap.min.js"></script>
   <script src="../js/main.js"></script>
