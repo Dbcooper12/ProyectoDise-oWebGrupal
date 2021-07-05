@@ -1,0 +1,20 @@
+.fondo1{
+    background-image:  linear-gradient(to bottom, #151515, #272932, #334152, #375b72, #327890, #34879d, #3696aa, #3ba6b5, #49aab9, #55adbd, #60b0c0, #6ab4c4);
+}
+
+.fondo2{
+    background-image: radial-gradient(circle, #8a397c, #624283, #38467c, #10456c, #004057, #003e4e, #063b46, #0e383e, #0e3a41, #0e3c43, #0e3d46, #0e3f49); 
+}
+
+.fondo3{
+    background-image: linear-gradient(to left bottom, #871122, #810032, #760040, #67084c, #531455, #4c1655, #451855, #3e1a55, #46174f, #4c1549, #511343, #54123d);
+}
+
+.fondo4{
+
+    background-image: linear-gradient(to top, #5b0b16, #650026, #6b0039, #6c004f, #651068, #651871, #64207b, #622784, #72257f, #80247a, #8c2575, #96276f);
+}
+
+.fondo5{
+    background-image: linear-gradient(to bottom, #544010, #4a4a19, #405228, #365939, #2d5f4b, #1a5d55, #055b5e, #005766, #004b68, #003d67, #002e61, #1f1c55);
+}
