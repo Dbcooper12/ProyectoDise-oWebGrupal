@@ -101,20 +101,12 @@ header a {
     padding: 5px 15px;
 }
  
-.juego{
-    width: 325px;
-    height: 400px;
-    display: block;
-    margin: auto; 
-}
-
-.subtitulo{
-    text-decoration: none;
-    background-image: linear-gradient(currentColor, currentColor);
-    background-position: 0% 50%;
-    background-repeat: no-repeat;
-    background-size: 0% 2px;
-    transition: background-size .5s;
+.juegoFoto{
+    width: 150px;
+    height: 100px;
+    display: block;    
+    margin: 15px; 
+    border-radius: 50%;
 }
 
 .content{
@@ -127,6 +119,9 @@ header a {
     width: 1250px;
     margin-right: auto;
     margin-left: auto;
+    display: flex;
+    border-bottom:rgb(170, 168, 168) dashed;
+    
 }
 
 .texto{
@@ -141,14 +136,32 @@ header a {
     justify-content: center;
 }
 
-.texCol {
+.texto {
     --borderWidth: 3px;
-    position: relative;
+    position:relative;    
     border-radius: var(--borderWidth);
-    border: 1px solid #333;
-    margin: 15px;
+    display:block;
+    margin: 1px;
+    text-align: left;
+
 }
-.texCol:after {
+
+
+.soloTexto{
+    width: 1250px;
+}
+
+.subtitulo{
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 50%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .5s;
+    font-size: 23px;
+}
+
+.texto:after {
     content: '';
     position: absolute;
     top: calc(-1 * var(--borderWidth));
