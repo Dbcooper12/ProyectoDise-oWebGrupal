@@ -72,8 +72,8 @@ form {
 
 header {
     flex: 0 0 auto;
-    background-color:#4980f865;
-    width: 900px;
+    background-color: #c1282d; color:black;
+    width: 1200px;
     margin: auto; 
     padding-left: 10px;
 }
@@ -138,3 +138,6 @@ header a {
     cursor: pointer;
     padding: 30px 30px;
 }
+
+
+ 

@@ -77,7 +77,7 @@ form {
 
 header {
     flex: 0 0 auto;
-    background-color:#4980f865;
+    background-color: #c1282d; color:black;
 }
 
 .head img {
@@ -105,7 +105,7 @@ header a {
     width: 150px;
     height: 100px;
     display: block;    
-    margin: 15px; 
+    margin: 50px; 
     border-radius: 50%;
 }
 
