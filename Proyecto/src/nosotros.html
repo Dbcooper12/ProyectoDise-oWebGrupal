@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tourney:ital,wght@1,700&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Roboto&display=swap" rel="stylesheet">
     <title>....::: Pepper's Games :::....</title>
 </head>
  
@@ -53,36 +53,43 @@
     </nav>
      <!-- Fin  Navegador -->
 
-    <button id="dis">MISIÓN</button>
-    <div class="transicion">
-      <p>
-        Satisfacer las necesidades de las personas interesadas en los videojuegos y articulos de novedad, prestandoles el
-        mejor servicio por parte de todo el personal de la empresa, y manteniendo siempre actualizado nuestro catálogo de
-        juegos y articulos para las diferentes plataformas.
-      </p>
+    <div>
+      <img id="nos" src="../img/NOSOTROS.png" alt="">
     </div>
-    <button id="dis">VISIÓN</button>
-    <div class="transicion">
-      <p>
-        Ser la empresa líder en calidad de servicio y ventas de videojuegos en diferentes partes del mundo, con lo más nuevo
-        y actualizado brindando la seguridad de compra para el mundo.
-      </p>
-    </div>
-    <div id="dis" class="sesgar">VALORES</div>
-    <div class="transicion">
-      <p>
-        
-        Respeto
-        <br> Lealtad
-        <br>Honestidad
-        <br>Responsabilidad
-        <br>Compromiso
-        <br>Seguridad
-      </p>
+
+    <section>
+        <a href="#" class="mis">MISION</a>
+    </section>
+
+    <div class="modal-container">
+      <div class="modal modal-close">
+        <p class="close">X</p>
+        <div class="modal-textos"></div>
+        <h2>MISION</h2>
+        <p>
+          Satisfacer las necesidades de las personas interesadas en los videojuegos y articulos de novedad, prestandoles el
+          mejor servicio por parte de todo el personal de la empresa, y manteniendo siempre actualizado nuestro catálogo de
+          videojuegos.
+        </p>
+      </div>
     </div>
 
 
-
+    <section>
+      <a href="#" id="pos" class="mis">VISION</a>
+    </section>
+    
+    <div class="modal-container">
+      <div class="modal modal-close">
+        <p class="close">X</p>
+        <div class="modal-textos"></div>
+        <h2>VISION</h2>
+        <p>
+          Ser la empresa líder en calidad de servicio y ventas de videojuegos en diferentes partes del mundo, con lo más nuevo
+          y actualizado brindando la seguridad de compra para el mundo.
+        </p>
+      </div>
+    </div>
 
 
      <!-- Footer -->
@@ -203,10 +210,12 @@
     <!-- Copyright -->
   </footer>
   <!-- Footer -->
+  <script src="../js/nosotros.js"></script>
   <script src="../js/jquery-3.4.1.min.js"></script>
   <script src="../js/bootstrap.min.js"></script>
   <script src="../js/main.js"></script>
   <script src="../js/inicio.js"></script>
+  
 </body>
 
 </html>
