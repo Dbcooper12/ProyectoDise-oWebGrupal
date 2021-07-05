@@ -50,12 +50,12 @@
      <!-- Fin  Navegador -->
       
      <!-- Iniciar Sesion -->
-      <div id="logreg-forms" onload="actualizarDatos()">
+      <div id="logreg-forms" >
           <form class="form-signin">
               <h1 class="h3 mb-3 font-weight-normal" style="text-align: center"> Registro</h1> 
-              <input type="text" id="nombre" class="form-control" placeholder="Nombre" required="" aria-describedby="basic-addon1"> <br>
+              <input type="text" id="nombre" class="form-control" placeholder="Nombre" required="" aria-describedby="basic-addon1"autofocus=""> <br>
               <input type="text" id="apellido" class="form-control" placeholder="Apellidos" required="" aria-describedby="basic-addon1"> <br>
-              <input type="email" id="correo" class="form-control" placeholder="Correo Electronico" required="" autofocus="" aria-describedby="basic-addon1"> <br>
+              <input type="email" id="correo" class="form-control" placeholder="Correo Electronico" required=""  aria-describedby="basic-addon1"> <br>
               <input type="password" id="contraseña" class="form-control" placeholder="Contraseña" required=""> <br>
               <input type="password" id="confiaContraseña" class="form-control" placeholder="Confirmar Contraseña" required=""> <br>
              
@@ -63,9 +63,22 @@
                 <input type="checkbox" > <p style="display: flex;">Acepto los<a href="#" style="padding: 1px;">Ternimos y Condiciones</a > </p>
               </div>
             
-              <button class="btn btn-success btn-block" type="submit" onclick="guardarDato()"
-              ><i class="fas fa-sign-in-alt"></i> Registrar 
-             </button> <br>
+              <div id="gbotones" class="btn-group" role="group" aria-label="...">
+                <button type="button" onclick="guardarDato()" class="btn btn-info">
+                    <span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span> Guardar
+                </button>
+                <button type="button" onclick="recuperarDato()" class="btn btn-success">
+                    <span class="glyphicon glyphicon-floppy-open" aria-hidden="true"></span> Recuperar
+                </button>
+                <button type="button" onclick="eliminarDato()" class="btn btn-danger">
+                    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Eliminar
+                </button>
+    
+            </div>
+    
+            <button type="button" onclick="eliminarTodo()" class="btn btn-danger">
+                <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Eliminar Todos
+            </button>
 
               <div>
                 <p style="display: flex; text-align: center;"> Ya tienes cuenta? <a href="../src/iniciosesion.html" style="padding: 1px;">Iniciar Sesion</a> </p>
@@ -74,7 +87,12 @@
               <hr> 
             
           </form>
+          
        </div> 
+       <hr>
+       <h1 style="text-align: center;">Contactos</h1>
+       <div id="contactos" style="padding-right:15px; padding-left: 500px; margin-right: auto; margin-left: auto;">
+       </div>
        <!-- Fin de inicio de sesion -->
 
      <!-- Footer -->
@@ -196,10 +214,13 @@
   </footer>
   <!-- Footer -->
   <script src="../js/registrarUsuario.js"></script>
-  <script src="../js/jquery-3.4.1.min.js"></script>
+  
   <script src="../js/bootstrap.min.js"></script>
   <script src="../js/main.js"></script>
   <script src="../js/inicio.js"></script>
+  <script src="../js/registrarUsuario.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
 </body>
 
 </html>
