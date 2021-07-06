@@ -1,11 +1,39 @@
-#bloque2{
-    width: 400px;
-    margin-left: 600px;
-    margin-top: -420px;
-    border-right: medium;
-    border-style: groove;
-    border-color: tomato;
-    
-     
+.cuadro1{
+    margin-left: 140px;
+    margin-top: 45px;
+    width: 300px;
 }
  
+#tit1{
+    margin-left: 75px;
+    margin-top: 25px;
+}
+
+.cuadro2{
+    margin-left: 800px;
+    margin-top: -530px;
+    padding: 10px;
+    width: 600px;
+    text-align: justify;
+    border-style: 1px ;
+    border: groove blue;
+    border-radius: 25px;
+}
+
+#texto{
+    margin-left: 75px;
+    margin-top: -45px;
+}
+
+.tamaño{
+    margin-left: 75px;
+}
+
+#tit3{
+    margin-left: 75px;
+}
+
+iframe{
+    margin-left: 155px;
+}
+
