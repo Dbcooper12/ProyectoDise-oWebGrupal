@@ -18,65 +18,64 @@ h5{
 
 .cuadro1{
     margin-top: 55px;
-    margin-left: 115px;
+    margin-left: 200px;
     padding: 10px;
-    width: 600px;
+    width: 500px;
     text-align: justify;
     border-style: 3px ;
-    border: groove rgba(233, 79, 32, 0.979);
-    background-color: whitesmoke;
+    border: groove #b94d6f;
     border-radius: 25px;
 }
 
 .cuadro2{
     margin-left: 800px;
-    margin-top: -177px;
+    margin-top: -178px;
     padding: 10px;
-    width: 600px;
+    width: 500px;
     height: 180px;
     text-align: justify;
     border-style: 1px ;
-    border: groove rgba(233, 79, 32, 0.979);
-    background-color: whitesmoke;
+    border: groove #b94d6f;
     border-radius: 25px;
 }
 
 #posI{
     margin-left: 200px;
     width: 1100px;
-    height: 300px;
+    height: 500px;
 }
 
 #for1{
-    margin-left: 255px;
-    margin-top: 15px;
-    width: 250px;
+    margin-left: 195px;
+    margin-top: -80px;
+    width: 220px;
     text-align: center;
-    background-color: thistle;
-    border-radius: 15px;
 }
 
 #for2{
-    margin-left: 530px;
+    margin-left: 430px;
     margin-top: -135px;
-    width: 250px;
+    width: 220px;
     text-align: center;
-    background-color: thistle;
-    border-radius: 15px;
 }
 #for3{
-    margin-left: 790px;
+    margin-left: 660px;
     margin-top: -110px;
-    width: 250px;
+    width: 210px;
     text-align: center;
-    background-color: thistle;
-    border-radius: 15px;
 }
+
+
 #for4{
-    margin-left: 1055px;
+    margin-left: 870px;
     margin-top: -135px;
-    width: 250px;
+    width: 200px;
     text-align: center;
-    background-color: thistle;
-    border-radius: 15px;
+}
+
+#for5{
+    margin-left: 1080px;
+    margin-top: -110px;
+    width: 220px;
+    text-align: center;
 }
